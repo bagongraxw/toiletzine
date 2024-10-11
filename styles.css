@@ -1,0 +1,35 @@
+.hammer-and-sickle-relief {
+    position: relative;
+    width: 100px; /* Atur ukuran sesuai kebutuhan */
+    height: 100px; /* Atur ukuran sesuai kebutuhan */
+    background-color: #ffcc00; /* Warna dasar */
+    clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%); /* Bentuk palu arit */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: rotate(45deg);
+    margin: 20px;
+}
+
+.hammer-and-sickle-relief::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background-color: #b30000; /* Warna palu arit */
+    clip-path: polygon(50% 0%, 100% 25%, 75% 100%, 25% 100%, 0% 25%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hammer-and-sickle-relief::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 20%;
+    background-color: #b30000; /* Warna palu */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Zine</title>
+    <style>
+        /* CSS Lengkap */
+        body {
+            background-color: #300000; /* Merah gelap */
+            font-family: 'Arial', sans-serif;
+            color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            background-image: url('soviet-flag.png'); /* Gambar bendera Uni Soviet */
+            background-size: cover; /* Mengatur ukuran gambar agar menutupi latar belakang */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+        }
+
+        header {
+            background-color: rgba(179, 0, 0, 0.9); /* Transparan */
+            color: #ffdd44;
+            padding: 20px;
+            text-align: left;
+            border-bottom: 5px solid #ffcc00;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2em;
+            color: #ffcc00;
+            transform: rotate(-15deg);
+        }
+
+        .soviet-logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 2em;
+            color: #ffcc00;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 4em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            font-family: 'Impact', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffdd44;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #ffdd44;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4444;
+            color: #fff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: flex; /* Menggunakan flexbox */
+            flex-wrap: wrap; /* Memungkinkan artikel pindah ke baris berikutnya */
+            justify-content: flex-start; /* Menjaga artikel ke kiri */
+            padding: 20px;
+        }
+
+        article {
+            background: rgba(50, 50, 50, 0.9);
+            border: 2px solid #ff4444;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px; /* Margin antar artikel */
+            flex: 0 1 calc(25% - 20px); /* Empat artikel di satu baris */
+            max-width: 250px; /* Lebar maksimum artikel */
+        }
+
+        article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
+        }
+
+        article img {
+            max-width: 100%;
+            border-bottom: 3px solid #ff4444;
+        }
+
+        h2 {
+            color: #ffdd44;
+            font-size: 1.8em;
+            margin: 10px 0;
+            font-family: 'Impact', sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(179, 0, 0, 0.9);
+            color: #ffdd44;
+            border-top: 5px solid #ffcc00;
+        }
+
+        footer a {
+            color: #ffdd44;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="hammer-and-sickle">&#x2692;&#x2716;</span>
+        </div>
+        <div class="soviet-logo">
+            <span class="hammer-and-sickle">&#x2692;&#x2716;</span>
+        </div>
+        <h1 class="title">Toilet Zine</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Beranda</a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">Ulasan</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <article>
+                <img src="toilet.jpeg" alt="Gambar Artikel">
+                <h2>Pudar Luncurkan EP Perdana: Siapkan Tur Showcase Intim di Bandung</h2>
+                <p>Mengupas peluncuran EP pertama Pudar dan rencana tur showcase yang akan datang di Bandung.</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </article>
+            
+            <article>
+                <img src="toilet.jpeg" alt="Gambar Artikel">
+                <h2>Recap Wisat Toilet: Road to Midsommar</h2>
+                <p>Meninjau kembali perjalanan menarik menuju acara Midsommar yang penuh warna.</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </article>
+            
+            <article>
+                <img src="toilet.jpeg" alt="Gambar Artikel">
+                <h2>Dialog dengan Jin Komunis</h2>
+                <p>Diskusi mendalam tentang ideologi komunis melalui sudut pandang yang unik.</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </article>
+            
+            <article>
+                <img src="toilet.jpeg" alt="Gambar Artikel">
+                <h2>Gede Pangrango Tolak Geothermal</h2>
+                <p>Melihat penolakan terhadap proyek geothermal di kawasan Gede Pangrango dan dampaknya.</p>
+                <a href="#" class="read-more">Baca Selengkapnya</a>
+            </article>
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toilet Zine. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
